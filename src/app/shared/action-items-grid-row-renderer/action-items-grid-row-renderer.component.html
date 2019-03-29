@@ -1,0 +1,8 @@
+<button *ngIf="deleteRequired" type="button" (click)="performAction($event)" value="delete" class="btn btn-secondary">
+  <i class="intelicon-trash-solid" aria-hidden="true">
+  </i>
+</button>
+<button *ngIf="copyRequired" type="button" (click)="performAction($event)" class="btn btn-secondary"  value="copy">
+  <i class="intelicon-copy-solid" aria-hidden="true" >
+  </i>
+ </button>
