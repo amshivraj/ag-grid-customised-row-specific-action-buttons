@@ -1,0 +1,21 @@
+<div class="row col-md-12">
+            <ag-grid-angular #agGrid
+                             style="width: 100%; height: 250px"
+                             class="ag-theme-balham"
+                             [rowData]="sampleData"
+                             [enableFilter]="true"
+                             [enableSorting]="true"
+                             [columnDefs]="sampleGridDef"
+                             [pagination]="true"
+                             [frameworkComponents]="sampleFrameworkComponents"
+                             [enableRangeSelection]="true"
+                             [singleClickEdit]="true"
+                             [defaultColDef]="defaultColDef"
+                             [enableColResize]="true"
+                             [context]="sampleContext"
+                             (gridReady)="sampleGridReady($event)"
+                             [getRowNodeId]="getSampleRowNodeId">
+
+
+            </ag-grid-angular>
+</div>
